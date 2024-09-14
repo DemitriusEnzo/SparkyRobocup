@@ -1,0 +1,46 @@
+@import url("header.css");
+@import url("main.css");
+@import url("images.css");
+@import url("gun.css");
+@import url("hardware.css");
+@import url("videos.css");
+@import url("robocup.css");
+@import url("horizon.css");
+@import url("footer.css");
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--first-color);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-text);
+    color: var(--font-color);
+}
+
+:root {
+    --first-color: #151515;
+    --second-color: #F9B00B;
+    --font-color: #ddd9ce;
+    --font-text: "Kanit", serif;
+    --font-title: "Audiowide", serif;
+    --font-size-title: 90px;
+    --font-size-text: 20px;
+    --contact-size: 25px;
+    --bg-transparent: transparent;
+}
+
+.text-first-color{color: var(--first-color);}
+.text-second-color{color: var(--second-color);}
+.first-color{color: var(--first-color);}
+.bg-transparent{background-color: var(--bg-transparent);}
+.bg-second-color{background-color: var(--second-color);}
+.bg-first-color{background-color: var(--first-color);}
+
+

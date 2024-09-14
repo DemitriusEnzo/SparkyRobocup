@@ -1,0 +1,22 @@
+.footer-contact {
+    background-color: var(--second-color);
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+    box-sizing: border-box;
+}
+
+.footer-info {
+    color: var(--first-color);
+    margin: 5px 0;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .footer-info {
+        margin: 0 20px;
+    }
+}

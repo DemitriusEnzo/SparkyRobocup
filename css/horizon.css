@@ -1,0 +1,152 @@
+.horizon {
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, .1)), linear-gradient(to bottom, rgba(0, 0, 0, 1.5), rgba(0, 0, 0, .1)), url(https://as2.ftcdn.net/v2/jpg/07/91/09/21/1000_F_791092101_xEZmgwy91G9cSQ8pfYOOCjRcT2vZczT8.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5% 0;
+    box-sizing: border-box;
+}
+
+.horizon-content {
+    text-align: center;
+    padding: 0 5%;
+    margin-bottom: 3%;
+}
+
+.horizon-title {
+    font-family: var(--font-title);
+    font-size: var(--font-size-title);
+    color: var(--font-color);
+    margin-bottom: 1%;
+}
+
+.horizon-text {
+    font-family: var(--font-text);
+    font-size: var(--font-size-text);
+    color: var(--font-color);
+    margin-bottom: 2%;
+}
+
+.horizon-team {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 4%;
+    max-width: 100%;
+    overflow-x: auto;
+}
+
+.member {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    margin-bottom: 2%;
+    height: 300px; 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+    white-space: nowrap; 
+}
+
+.member-infos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+}
+
+.member-photo {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 45%;
+    margin-bottom: 10px;
+}
+
+.member-name {
+    font-family: var(--font-text);
+    font-size: 1.4rem;
+    color: var(--font-color);
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+}
+
+.member-contact {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.contact {
+    font-size: var(--contact-size);
+    color: var(--font-color);
+}
+
+@media (max-width: 768px) {
+    .horizon-team {
+        flex-direction: column;
+        align-items: center;
+        overflow-x: hidden;
+        gap: 3%;
+    }
+
+    .member {
+        width: 90%;
+        max-width: 280px;
+    }
+
+    .member-photo {
+        max-width: 180px;
+    }
+
+    .member-name {
+        font-size: 1.4rem;
+    }
+
+    .member-contact {
+        font-size: 1.2rem;
+    }
+
+    .member-infos {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .horizon-title {
+        font-size: 1.5rem;
+    }
+
+    .horizon-text {
+        font-size: 1.2rem;
+    }
+
+    .member {
+        width: 100%;
+        max-width: none;
+    }
+
+    .member-photo {
+        max-width: 150px;
+    }
+
+    .member-name {
+        font-size: 1.2rem;
+    }
+
+    .member-contact {
+        font-size: 1.5rem;
+    }
+
+    .member-infos {
+        padding: 20px;
+    }
+}

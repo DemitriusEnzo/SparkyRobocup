@@ -1,0 +1,54 @@
+.robot-videos {
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, .1)), linear-gradient(to bottom, rgba(0, 0, 0, 1.5), rgba(0, 0, 0, .1)), url(https://as1.ftcdn.net/v2/jpg/08/68/81/72/1000_F_868817262_cNjeWyBTp2zLdbD9N4NLrxvnCiRAamQD.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    padding: 10% 0;
+}
+
+.robot-videos-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    color: var(--font-color);
+}
+
+.videos-title {
+    font-family: var(--font-title);
+    font-size: var(--font-size-title);
+    margin-bottom: 15px;
+}
+
+.videos-text {
+    font-family: var(--font-text);
+    font-size: var(--font-size-text);
+    margin-bottom: 30px;
+}
+
+.videos-ratio {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 15px;
+    width: 100%;
+}
+
+.ratio {
+    position: relative;
+    padding-top: 56.25%;
+    border: 2px solid var(--second-color);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.ratio iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}

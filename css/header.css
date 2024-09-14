@@ -1,0 +1,26 @@
+.nav-link {
+    color: var(--font-color) !important;
+    transition: color 0.7s;
+}
+
+.nav-link:hover {
+    color: var(--second-color) !important;
+}
+
+.navbar-brand {
+    color: var(--second-color) !important;
+}
+
+.navbar-brand:hover {
+    color: var(--second-color) !important;
+}
+
+.offcanvas-body {
+    background-color: transparent;
+}
+
+@media (max-width: 991px) {
+    .offcanvas-body {
+        background-color: var(--first-color);
+    }
+}
