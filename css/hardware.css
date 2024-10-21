@@ -24,6 +24,10 @@
         margin-bottom: 10px;
         border-bottom: 2px solid var(--second-color);
         border-radius: 15%;
+
+        @media (max-width: 480px) {
+                font-size: 3rem;
+        }
     }
 
     .hardware-text {

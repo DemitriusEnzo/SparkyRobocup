@@ -1,10 +1,10 @@
 .presentation {
-    background-image: linear-gradient(to top, rgba(0, 0, 0, 1.5), rgba(0, 0, 0, .3)) 
-                      ,url(https://www.fiap.com.br/wp-content/themes/fiap2016/images/next/finals/fotos/robocup.jpg);
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 1.5), rgba(0, 0, 0, .3)), url(https://www.fiap.com.br/wp-content/themes/fiap2016/images/next/finals/fotos/robocup.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
     width: 100%;
+
     .presentation-title {
         text-align: center;
     }
@@ -22,6 +22,10 @@
         width: 78%;
         font-size: var(--font-size-text);
         text-align: center;
+
+        @media (max-width: 480px) {
+            font-size: 1.2rem;
+        }
     }
 
     .presentation-square {
@@ -50,7 +54,7 @@
             }
         }
 
-        :hover{
+        :hover {
             background-color: var(--second-color);
             color: var(--first-color);
         }
