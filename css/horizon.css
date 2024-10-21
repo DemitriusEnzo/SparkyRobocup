@@ -23,6 +23,8 @@
     font-size: var(--font-size-title);
     color: var(--font-color);
     margin-bottom: 1%;
+    border-bottom: 2px solid var(--second-color);
+    border-radius: 15%;
 }
 
 .horizon-text {
@@ -68,6 +70,7 @@
     object-fit: cover;
     border-radius: 45%;
     margin-bottom: 10px;
+    border: 2px solid var(--second-color);
 }
 
 .member-name {
@@ -77,17 +80,24 @@
     white-space: nowrap; 
     overflow: hidden; 
     text-overflow: ellipsis; 
+    border-bottom: 1px solid var(--second-color);
 }
 
-.member-contact {
+.member-social {
     display: flex;
     justify-content: center;
-    gap: 10px;
+    gap: 40px;
 }
 
-.contact {
+.social {
     font-size: var(--contact-size);
     color: var(--font-color);
+    transition: 0.9s ease;
+
+    &:hover {
+        color: var(--second-color);
+        scale: 1.2;
+    }
 }
 
 @media (max-width: 768px) {
@@ -111,7 +121,7 @@
         font-size: 1.4rem;
     }
 
-    .member-contact {
+    .member-social {
         font-size: 1.2rem;
     }
 
@@ -142,7 +152,7 @@
         font-size: 1.2rem;
     }
 
-    .member-contact {
+    .member-social {
         font-size: 1.5rem;
     }
 

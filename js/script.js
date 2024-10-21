@@ -1,7 +1,7 @@
 const swiper = new Swiper('.swiper', {
     speed: 400,
     spaceBetween: 10,
-    slidesPerView: 3, // Padrão para telas grandes
+    slidesPerView: 3,
     pagination: {
         el: '.swiper-pagination',
         clickable: true,
@@ -9,16 +9,16 @@ const swiper = new Swiper('.swiper', {
     },
     breakpoints: {
         1200: {
-            slidesPerView: 3, // Exibe 3 imagens para telas grandes (>= 1200px)
+            slidesPerView: 3,
         },
         992: {
-            slidesPerView: 2, // Exibe 2 imagens em telas médias (>= 992px e < 1200px)
+            slidesPerView: 2,
         },
         768: {
-            slidesPerView: 1, // Exibe 1 imagem para telas menores (>= 768px e < 992px)
+            slidesPerView: 1,
         },
         0: {
-            slidesPerView: 1, // Exibe 1 imagem para telas muito pequenas (< 768px)
+            slidesPerView: 1,
         }
     }
 });

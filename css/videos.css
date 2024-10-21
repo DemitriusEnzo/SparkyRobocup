@@ -21,6 +21,8 @@
     font-family: var(--font-title);
     font-size: var(--font-size-title);
     margin-bottom: 15px;
+    border-bottom: 2px solid var(--second-color);
+    border-radius: 15%;
 }
 
 .videos-text {
@@ -31,9 +33,9 @@
 
 .videos-ratio {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     gap: 15px;
-    width: 100%;
+    width: 50%;
 }
 
 .ratio {

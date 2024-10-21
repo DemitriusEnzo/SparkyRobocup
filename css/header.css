@@ -9,18 +9,21 @@
 
 .navbar-brand {
     color: var(--second-color) !important;
-}
-
-.navbar-brand:hover {
-    color: var(--second-color) !important;
+    font-family: var(--font-title);
 }
 
 .offcanvas-body {
     background-color: transparent;
 }
 
+.offcanvas-body.collapsed {
+    background-image: url(../images/menu-background.jpg);
+    object-fit: cover;
+}
+
 @media (max-width: 991px) {
     .offcanvas-body {
-        background-color: var(--first-color);
+        background-image: url(../images/menu-background.jpg);
+        object-fit: cover;
     }
 }

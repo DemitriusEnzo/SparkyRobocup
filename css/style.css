@@ -7,6 +7,7 @@
 @import url("robocup.css");
 @import url("horizon.css");
 @import url("footer.css");
+@import url("contact.css");
 
 html {
     scroll-behavior: smooth;
@@ -27,12 +28,14 @@ body {
 :root {
     --first-color: #151515;
     --second-color: #F9B00B;
+    --third-color: #000000;
     --font-color: #ddd9ce;
     --font-text: "Kanit", serif;
     --font-title: "Audiowide", serif;
     --font-size-title: 90px;
+    --font-size-hardware-title: 85px;
     --font-size-text: 20px;
-    --contact-size: 25px;
+    --contact-size: 30px;
     --bg-transparent: transparent;
 }
 

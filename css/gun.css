@@ -28,6 +28,8 @@
     font-size: var(--font-size-title);
     text-align: center;
     margin-bottom: 20px;
+    border-bottom: 2px solid var(--second-color);
+    border-radius: 15%;
 }
 
 .gun-text {

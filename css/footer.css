@@ -4,7 +4,7 @@
     height: auto;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     padding: 10px 0;
     box-sizing: border-box;
 }
@@ -13,6 +13,32 @@
     color: var(--first-color);
     margin: 5px 0;
     text-align: center;
+}
+
+.footer-email {
+    text-decoration: none;
+    color: var(--first-color);
+    transition: 0.7s ease;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.footer-text {
+    font-family: var(--font-text);
+    font-size: 16px;
+    color: var(--first-color);
+    text-align: center;
+    margin: 5px 0;
+
+    .footer-title {
+        font-family: var(--font-title);
+        font-size: 16px;
+        color: var(--first-color);
+        text-align: center;
+        margin: 5px 0;
+    }
 }
 
 @media (min-width: 768px) {

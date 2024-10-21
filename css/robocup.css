@@ -3,6 +3,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
+    height: auto;
     padding: 6% 0;
 }
 
@@ -13,7 +14,6 @@
     justify-content: center;
     width: 90%;
     margin: 0 auto;
-    text-align: center;
     color: var(--font-color);
 }
 
@@ -21,6 +21,8 @@
     font-family: var(--font-title);
     font-size: var(--font-size-title);
     margin-bottom: 20px;
+    border-bottom: 2px solid var(--second-color);
+    border-radius: 15%;
 }
 
 .robocup-text {
@@ -30,10 +32,10 @@
     width: 70%;
 }
 
-.robocup-logo-accordion {
+.robocup-logos {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 100%;
     max-width: 1200px;
     margin-top: 20px;
@@ -42,45 +44,65 @@
 }
 
 .logo {
-    width: 25%;
-    max-width: 200px;
+    width: 30%;
+    max-width: 250px;
     border: none;
-}
-
-.fiap-logo {
-    margin-right: auto;
-}
-
-.sap-logo {
-    margin-left: auto;
 }
 
 .accordion-container {
     width: 50%;
     display: flex;
     justify-content: center;
+    margin-top: 130px;
+}
+
+.next-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    margin: 0 auto;
+    color: var(--font-color);
+}
+
+.next-texts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 120px;
+}
+
+.next-title {
+    font-family: var(--font-title);
+    font-size: var(--font-size-title);
+    margin-bottom: 20px;
+    border-bottom: 2px solid var(--second-color);
+    border-radius: 15%;
+}
+
+.next-text {
+    font-family: var(--font-text);
+    font-size: var(--font-size-text);
+    margin: 0 auto;
+    width: 70%;
 }
 
 @media (max-width: 1024px) and (min-width: 768px) {
-    .robocup-logo-accordion {
-        flex-direction: row;
+    .robocup-logos {
         align-items: center;
-        justify-content: space-between;
+        justify-content: space-around;
         gap: 20px;
     }
 
-    .logo {
-        width: 30%;
-        max-width: 180px;
-    }
-
     .accordion-container {
-        width: 40%;
+        width: 60%;
     }
 }
 
 @media (max-width: 768px) {
-    .robocup-text {
+    .robocup-text,
+    .next-text {
         width: 90%;
     }
 
@@ -92,7 +114,7 @@
 
     .logo {
         width: 40%;
-        max-width: 150px;
+        max-width: 200px;
     }
 
     .accordion-container {
@@ -101,11 +123,13 @@
 }
 
 @media (max-width: 480px) {
-    .robocup-title {
+    .robocup-title,
+    .next-title {
         font-size: 1.2rem;
     }
 
-    .robocup-text {
+    .robocup-text,
+    .next-text {
         font-size: 0.9rem;
     }
 }
